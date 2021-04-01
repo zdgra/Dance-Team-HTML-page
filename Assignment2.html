@@ -1,0 +1,320 @@
+<!--
+
+you will create a home page about your favorite hobby or interest
+
+Presence of a title (5 points) (check)
+Correct HTML/CSS.  Validates reasonably well. (10 points) (check)
+Links with rollovers (5 points)
+Aesthetic choices:
+Legible text (5 points)
+Non-clashing colors that ruin legibility   (5 points)
+Reasonable used of space (including alignment of boxes, etc.) (5 points)
+A clear focal point with one image. (5 points).
+Creativity (10 points)
+Appropriateness to purpose (10 points)
+The use of Flexbox (40 points)
+
+-->
+
+<!DOCTYPE html>
+<html lang = "en">
+	<meta charset = "UTF-8">
+	
+	<!-- Styling -->
+	<style>
+		h1 {
+			color: #9932CC;
+			text-align: center;
+		}
+		
+		h2 {
+			color: #9932CC;
+		}
+	
+		p {
+			font-size: 16px;
+		}
+		
+		a {
+			color: #9932CC;
+		}
+		
+		<!-- credit: https://css-tricks.com/having-fun-with-link-hover-effects/ -->
+		a:hover {
+			color: #9932CC;
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+			background-position: bottom;
+			background-repeat: repeat-x;
+			background-size: 20%;
+			border-bottom: 0;
+			padding-bottom: .3em;
+			text-decoration: none;
+		}
+		
+		th, td {
+			padding: 5px;
+		}
+		
+		table, th, td {
+			border: 1px solid black;
+			font-size: 16px;
+		}
+		
+		#container {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		
+		#container1 {
+			display: flex;
+			justify-content: center;
+		}
+		
+		section {
+			flex: 0 1 50%;
+		}
+	</style>
+	
+	<title>Fresh Off the Beat</title>
+	
+	<body>
+		<!-- Heading + team photos -->
+		<h1>Fresh Off the Beat</h1>
+		
+		<p style = "text-align: center;">
+			<img src = "http://eustis3.eecs.ucf.edu/~abuegzachariah/IMG_4437 (2).jpg" width = "533" height = "400"
+			alt = "Fresh Off the Beat at Def Talent Jam 2018"> &nbsp; &nbsp;
+			<img src = "http://eustis3.eecs.ucf.edu/~abuegzachariah/IMG-1208.jpg" width = "533" height = "400"
+			alt = "Fresh Off the Beat at PhilFest 2019">
+		</p>
+		
+		<!-- Section links -->
+		<p style = "text-align: center;">
+			<a href = "#background">Background</a> &nbsp;
+			<a href = "#performances">Performances</a> &nbsp;
+			<a href = "#competitions">Competitions</a> &nbsp;
+			<a href = "#createandteaches">Create and Teaches</a> &nbsp;
+			<a href = "#contact">Contact</a> &nbsp;
+			<a href = "index.html">Assignment 1</a> &nbsp;
+			<a href = "Assignment3.html">Assignment 3</a> &nbsp;
+			<a href = "#">Assignment 4</a> &nbsp;
+			<a href = "#">Assignment 5</a> &nbsp;
+		</p>
+		
+		<!-- Background -->
+		<section id = "background">
+			<h2>Background</h2>
+			
+			<p style = "max-width: 600px;">
+				My name is Zachariah Abueg (he/him), and Fresh Off the Beat is the beloved
+				dance team that I danced with for two years!
+				<br>
+				<br>
+				Fresh Off the Beat, or FOB, is an amateur dance team that stems from the
+				Filipino Student Association at the University of Central Florida.
+				We perform, compete, and host dance workshops at UCF and throughout
+				the Florida dance community. Every semester, the team holds auditions
+				and welcomes a new group of people to dance and bond together. By semester's
+				end, we're as tight-knight a family as anyone of them could have ever
+				dreamed of.
+				<br>
+				<br>
+				From Fall 2017 to Spring 2019, I performed and competed with FOB. But it was 
+				more than just dance, bigger than just dance. I met so many beautiful souls 
+				throughout my seasons on the team, all containing multitudes. Some of the 
+				funniest, most compassionate, most talented people I know, I met on this team.
+				The friends I've made from it are invaluable to me and I'm so grateful to have
+				been a part of this experience.
+				<br>
+				<br>
+				In my second year on FOB, I was given the opportunity to lead this team
+				alongside one of my best, most talented friends, Kylha DelosReyes, with the help
+				of another two of my best, most talented friends, Kelly Mac and Jonathan Dioneda. 
+				It was the craziest, most difficult thing I've ever had to do. Yet, with everyone 
+				I danced with, laughed with, sung with, was fools with, "ooh ooh ooh ooh"d with - 
+				it was also the funnest, dearest, most special thing I've ever done, all because 
+				of the funnest, dearest, most special people I've ever been with. We danced our 
+				asses off and ended up winning 3rd place at Def Talent Jam and 1st place at 
+				PhilFest. It was a perfect culmination of our time growing and bonding together.
+				<br>
+				<br>
+				Dancing with FOB is a cornerstone of my college experience. Spending two months
+				with the same group of people sweating your life off in practice together is quite the
+				way to bond together. I wouldn't have changed anything about it. There's a
+				particularly grueling time of the FOB season we call Hell Week, which is when we
+				have practices that are much later nights than usual in preparation for the
+				upcoming competition of the season. It really takes a toll on everyone and 
+				the very late nights make many of us take a backseat in either sleep or 
+				academic performance. It's pretty tough. Yet, throughout that week and after it, 
+				we take care of each other and become the closest we've been the entire season. 
+				Come competition time, we bleed our souls out and leave everything we've got on 
+				the floor.
+				<br>
+				<br>
+				Going through the season of intense practices together and getting 
+				through the hell that is Hell Week really bonds us and brings us together in a 
+				way I've never bonded with anyone before. It's perhaps the most special thing
+				about FOB to me, the thing that I hold dearest to my heart. I had the time of
+				my life dancing with FOB, and it's all thanks to the beautiful souls I've been
+				with on this team. 
+				<br>
+				<br>
+				FOB Forever!
+			</p>
+			
+			<!-- FOB chants videos -->
+			<video width = "360" height = "470" controls>
+				<source src = "http://eustis3.eecs.ucf.edu/~abuegzachariah/fobon3.mp4" type = "video/mp4">
+			</video>
+			&nbsp; &nbsp;
+			<video width = "360" height = "470" controls>
+				<source src = "http://eustis3.eecs.ucf.edu/~abuegzachariah/fobon3-spring.mp4" type = "video/mp4">
+			</video>
+		</section>
+		
+		<!-- Performances -->
+		<section id = "performances">
+			<h2>Performances</h2>
+			
+			<p style = "max-width: 600px;">
+				Every semester - fall, spring, and summer - Fresh Off the Beat has practices
+				leading up to one or more performances at the very end. Here is a list of
+				FOB's performances the year I 
+				<br>
+				co-coordinated the team with Kylha:
+			</p>
+			
+			<!-- List of performances -->
+			<ol>
+				<li><strong>Summer 2018</strong></li>
+					<ul>
+						<li>Fiesta mo sa USA</li>
+						<li>UCF's FSA Basketball Association: Half-time Show</li>
+						<li>UCF's Asian Pacific American Coalition Presents: APAC Assembly</li>
+						<li>UCF's Filipino Student Association Presents: Grease</li>
+					</ul>
+				
+				<li><strong>Fall 2018</strong></li>
+					<ul>
+						<li>UF's Filipino Student Association Presents: Def Talent Jam</li>
+					</ul>
+				
+				<li><strong>Spring 2019</strong></li>
+					<ul>
+						<li>UCF's Filipino Student Association Presents: Sayaw</li>
+						<li>Relay for Life</li>
+						<li>UCF's Asian Student Association Presents: Mr. and Ms. ASA Pageant</li>
+						<li>Philippine Cultural Foundation, Inc. Presents: PhilFest Revolution</li>
+					</ul>
+			</ol>
+		</section>
+		
+		<!-- Competitions -->
+		<section id = "competitions">
+			<h2>Competitions</h2>
+			
+			<p>
+				The FOB season culminates in a competition every fall and spring semester.
+			</p>
+				
+			<div id = "container">
+				<!-- Def Talent Jam -->
+				
+				<section style = "max-width: 500px;">
+					<h3 id = "container1" style = "color: #B87DE8;">Def Talent Jam</h3>
+					
+					Every fall, UF's Filipino Student Association hosts a competition called
+					Def Talent Jam, or DTJ, welcoming dance teams of Filipino student associations
+					from all over Florida and Georgia. Every year, there is a different theme for DTJ
+					and each team is tasked with a challenge. During my year of leading the team with
+					Kylha, DTJ's theme was "Ako Ay", or "I Am" in Tagalog, and the challenge was to
+					incorporate at least one Filipino cultural dance in a fusion piece. Our set's theme
+					was "Ako Ay Sinta", or "I Am Love": sinta is an old-fashioned Tagalog word for love, 
+					and calling someone your "sinta" has the same charm as calling them your "beloved" 
+					or "darling". In our set, we followed a story of friendship, heartbreak, and love.
+					Additionally, we chose to incorporate Sayaw sa Bangko, which is Tagalog for "dance 
+					on a bench", a folk dance from the Pangasinan province of the Philippines.
+				</section>
+				
+				<!-- PhilFest Revolution -->
+				<section style = "max-width: 500px;">
+					<h3 id = "container1">
+						<span style='color: blue'>Phil</span>
+						<span style='color: #ffc21a'>Fest </span>
+						<span style='color: red'>Revolution</span>
+					</h3>
+					
+					Every spring, Philippine Cultural Foundation, Inc. from Tampa hosts a competition
+					called PhilFest Revolution, welcoming dance teams from all over Florida. Every 
+					year, each team is tasked with the challenge of incorporating a Filipino cultural
+					dance given to them. During my year of leading the team with Kylha, FOB was tasked 
+					with incorporating Banga, a folk dance from the Kalinga villages of the Philippines 
+					inspired by Kalinga women's daily routine of fetching water with bangas, or pots.
+					Since there was no theme to abide by and thus no need to follow a story, we chose to
+					create a set of the songs we wanted to choreograph to, just experimenting and having fun!
+				</section>
+			</div>
+			
+			<h3 style = "color: #9932CC;">Videos</h3>
+			
+			<!-- Competition videos -->
+			<iframe width = "560" height = "315" src = "https://www.youtube.com/embed/6smUbZVdyPc" frameborder = "0"
+			allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen></iframe>
+			&nbsp;
+			<iframe width = "560" height = "315" src = "https://www.youtube.com/embed/Jsv7GiiEnPM" frameborder = "0"
+			allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen></iframe
+		</section>
+		
+		<!-- Create + Teaches -->
+		<section id = "createandteaches">
+			<h2>Create and Teaches</h2>
+			
+			<p style = "max-width: 600px;">
+				After the fall and spring FOB seasons, FOB hosts dance workshops that we call Create
+				and Teaches, where anyone who's been on the team for at least one semester - past or
+				present - can <em>create</em> their own choreography and... you guessed it,
+				<em>teach</em> it! It gives our members a chance to experiment, find themselves in
+				the art, and just have fun!
+				<br>
+				<br>
+				Here's one of my own:
+				<br>
+				<br>
+				
+				<!-- Create + Teach video -->
+				<iframe width = "560" height = "315" src = "https://www.youtube.com/embed/0mZJDsAIdjk" frameborder = "0"
+				allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+			</p>
+		</section>
+		
+		<!-- Contact -->
+		<section id = "contact">
+			<h2>Contact</h2>
+			
+			<p style = "max-width: 600px;">
+				If you're interested in joining Fresh Off the Beat or want to reach out to them,
+				here are their social media links!
+			</p>
+			
+			<!-- Table of social media links -->
+			<table>
+				<tr>
+					<th>Facebook</th>
+					<td><a href = "https://www.facebook.com/FSAFreshOfftheBeat">FSA at UCF's Fresh Off the Beat</a></td>
+				</tr>
+				<tr>
+					<th>Instagram</th>
+					<td><a href = "https://www.instagram.com/fob_ucf/">@fob_ucf</a></td>
+				</tr>
+				<tr>
+					<th>Email</th>
+					<td><a href = "mailto:freshoffthebeat@gmail.com">freshoffthebeat@gmail.com</a></td>
+				</tr>
+			</table>
+		</section>
+	</body>
+</html>
